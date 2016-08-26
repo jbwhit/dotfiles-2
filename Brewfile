@@ -1,13 +1,12 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
-brew 'bash'
-brew 'bash-completion2'
-
 tap 'homebrew/dupes'
 tap 'caskroom/versions'
 tap 'homebrew/versions'
 
+brew 'bash'
+brew 'bash-completion2'
 brew 'awscli'
 brew 'binutils'
 brew 'cheat'
