@@ -6,6 +6,7 @@ brew 'bash-completion2'
 
 tap 'homebrew/dupes'
 tap 'caskroom/versions'
+tap 'homebrew/versions'
 
 brew 'awscli'
 brew 'binutils'
