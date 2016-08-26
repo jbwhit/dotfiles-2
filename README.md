@@ -40,8 +40,10 @@ There's a few special files in the hierarchy.
 Run this:
 
 ```sh
-git clone https://github.com/holman/dotfiles.git ~/.dotfiles
+git clone git@github.com:jbwhit/dotfiles-setup.git ~/.dotfiles
 cd ~/.dotfiles
+
+# Maybe run: 
 script/bootstrap
 ```
 
@@ -56,22 +58,46 @@ defaults, and so on. Tweak this script, and occasionally run `dot` from
 time to time to keep your environment fresh and up-to-date. You can find
 this script in `bin/`.
 
-## bugs
+## Setting up
 
-I want this to work for everyone; that means when you clone it down it should
-work for you even though you may not have `rbenv` installed, for example. That
-said, I do use this as *my* dotfiles, so there's a good chance I may break
-something if I forget to make a check for a dependency.
+Set up your `.ssh/config` file. This is a good start: http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
 
-If you're brand-new to the project and run into any blockers, please
-[open an issue](https://github.com/holman/dotfiles/issues) on this repository
-and I'd love to get it fixed for you!
+```
+mkdir -p $HOME/.ssh
+chmod 0700 $HOME/.ssh
+```
 
-## thanks
+Have a new key-pair for each new client laptop.
 
-I forked [Ryan Bates](http://github.com/ryanb)' excellent
-[dotfiles](http://github.com/ryanb/dotfiles) for a couple years before the
-weight of my changes and tweaks inspired me to finally roll my own. But Ryan's
-dotfiles were an easy way to get into bash customization, and then to jump ship
-to zsh a bit later. A decent amount of the code in these dotfiles stem or are
-inspired from Ryan's original project.
+Learn tmux http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+http://www.starkandwayne.com/blog/iterm-and-tmux-sitting-in-a-tree/
+
+## Your laptop will now have
+
+ - brew installed
+ - conda installed w/ reasonable starting packages
+ - svds-style installed (automatically make Jupyter Notebooks have SVDS templating)
+ - mplsvds installed (plots will use SVDS colors)
+ - one-command functions to create minimal or template notebooks that query most up-to-date versions automatically
+ - Extra command line tools 
+     + pandoc
+     + tmux
+     + wget
+     + grep
+ - Applications (that you don't have to install separately from internet)
+     + iTerm2
+     + Sublime Text
+     + Google Chrome
+     + caffeine
+     + flux
+     + SourceTree
+     + VLC
+
+
+## Decommissioning 
+
+ - Delete .ssh/
+ - Remove installed applications
+ - Empty trash
+
+

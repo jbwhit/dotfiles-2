@@ -16,6 +16,7 @@ brew 'diffutils'
 brew 'file-formula'
 brew 'findutils', args: ['with-default-names']
 brew 'gawk'
+brew 'gcc'
 brew 'git'
 brew 'git-lfs'
 brew 'git-flow'
