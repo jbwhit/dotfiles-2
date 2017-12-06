@@ -58,7 +58,7 @@ brew 'watch'
 brew 'wdiff', args: ['with-gettext']
 brew 'wget', args: ['with-iri']
 
-cask 'adobe-reader'
+cask 'spectacle'
 cask 'iterm2'
 cask 'sublime-text'
 cask 'google-chrome'
