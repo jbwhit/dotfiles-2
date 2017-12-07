@@ -41,7 +41,7 @@ There's a few special files in the hierarchy.
 Run this:
 
 ```sh
-git clone git@github.com:jbwhit/dotfiles-setup.git ~/.dotfiles
+git clone https://github.com/jbwhit/dotfiles-setup.git ~/.dotfiles
 cd ~/.dotfiles
 
 # Maybe run: 
